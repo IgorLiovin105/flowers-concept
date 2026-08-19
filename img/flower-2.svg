@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="bg" cx="0.5" cy="0.3" r="0.85">
+      <stop offset="0" stop-color="#fff1e0"/>
+      <stop offset="1" stop-color="#fffaf2"/>
+    </radialGradient>
+    <linearGradient id="petalBack" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff8a65"/>
+      <stop offset="1" stop-color="#e64a19"/>
+    </linearGradient>
+    <linearGradient id="petalFront" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffab91"/>
+      <stop offset="1" stop-color="#f4511e"/>
+    </linearGradient>
+    <linearGradient id="leafG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7fbf50"/>
+      <stop offset="1" stop-color="#2e7d32"/>
+    </linearGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg)"/>
+
+  <g stroke="#3e7a3e" stroke-width="6" stroke-linecap="round" fill="none">
+    <path d="M200 250 C 200 320 196 365 184 400"/>
+  </g>
+
+  <g fill="url(#leafG)">
+    <path d="M200 262 C 152 268 122 306 118 366 C 158 376 186 336 200 262 Z"/>
+    <path d="M200 270 C 252 268 282 300 284 350 C 246 358 216 326 200 270 Z"/>
+  </g>
+  <g fill="none" stroke="#2e7d32" stroke-width="3" stroke-linecap="round">
+    <path d="M150 300 C 138 330 138 350 150 368"/>
+    <path d="M254 300 C 264 324 264 340 254 354"/>
+  </g>
+
+  <g opacity="0.45" filter="url(#soft)">
+    <path d="M200 88 C 164 128 158 196 172 252 C 186 244 214 244 228 252 C 242 196 236 128 200 88 Z" fill="url(#petalBack)"/>
+  </g>
+
+  <path d="M200 88 C 164 128 158 196 172 252 C 186 244 214 244 228 252 C 242 196 236 128 200 88 Z" fill="url(#petalBack)"/>
+
+  <path d="M200 84 C 186 138 180 208 188 262 C 170 268 154 252 154 210 C 154 158 168 116 200 84 Z" fill="url(#petalFront)"/>
+  <path d="M200 84 C 214 138 220 208 212 262 C 230 268 246 252 246 210 C 246 158 232 116 200 84 Z" fill="url(#petalFront)" opacity="0.92"/>
+
+  <path d="M200 86 C 195 150 195 210 200 262 C 205 210 205 150 200 86 Z" fill="#ffd54f" opacity="0.6"/>
+</svg>

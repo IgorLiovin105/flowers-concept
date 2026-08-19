@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="bg" cx="0.5" cy="0.4" r="0.8">
+      <stop offset="0" stop-color="#fffbe9"/>
+      <stop offset="1" stop-color="#fffaf0"/>
+    </radialGradient>
+    <radialGradient id="petalG" cx="0.5" cy="0.85" r="0.85">
+      <stop offset="0" stop-color="#ffb300"/>
+      <stop offset="0.6" stop-color="#ff7043"/>
+      <stop offset="1" stop-color="#e91e63"/>
+    </radialGradient>
+    <radialGradient id="discG" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffd54f"/>
+      <stop offset="1" stop-color="#b26a00"/>
+    </radialGradient>
+    <linearGradient id="stemG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#66bb6a"/>
+      <stop offset="1" stop-color="#2e7d32"/>
+    </linearGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+    <g id="petal">
+      <ellipse cx="200" cy="150" rx="16" ry="58" fill="url(#petalG)"/>
+    </g>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg)"/>
+
+  <g stroke="url(#stemG)" stroke-width="7" stroke-linecap="round" fill="none">
+    <path d="M200 240 C 200 310 196 360 184 400"/>
+  </g>
+  <g fill="#4caf50">
+    <path d="M200 250 C 150 258 120 296 116 356 C 156 366 184 326 200 250 Z"/>
+    <path d="M200 258 C 252 256 282 288 284 338 C 246 346 216 314 200 258 Z"/>
+  </g>
+
+  <g opacity="0.4" filter="url(#soft)">
+    <use href="#petal" transform="rotate(0 200 230)"/>
+    <use href="#petal" transform="rotate(30 200 230)"/>
+    <use href="#petal" transform="rotate(60 200 230)"/>
+    <use href="#petal" transform="rotate(90 200 230)"/>
+    <use href="#petal" transform="rotate(120 200 230)"/>
+    <use href="#petal" transform="rotate(150 200 230)"/>
+    <use href="#petal" transform="rotate(180 200 230)"/>
+    <use href="#petal" transform="rotate(210 200 230)"/>
+    <use href="#petal" transform="rotate(240 200 230)"/>
+    <use href="#petal" transform="rotate(270 200 230)"/>
+    <use href="#petal" transform="rotate(300 200 230)"/>
+    <use href="#petal" transform="rotate(330 200 230)"/>
+  </g>
+
+  <g>
+    <use href="#petal" transform="rotate(0 200 230)"/>
+    <use href="#petal" transform="rotate(30 200 230)"/>
+    <use href="#petal" transform="rotate(60 200 230)"/>
+    <use href="#petal" transform="rotate(90 200 230)"/>
+    <use href="#petal" transform="rotate(120 200 230)"/>
+    <use href="#petal" transform="rotate(150 200 230)"/>
+    <use href="#petal" transform="rotate(180 200 230)"/>
+    <use href="#petal" transform="rotate(210 200 230)"/>
+    <use href="#petal" transform="rotate(240 200 230)"/>
+    <use href="#petal" transform="rotate(270 200 230)"/>
+    <use href="#petal" transform="rotate(300 200 230)"/>
+    <use href="#petal" transform="rotate(330 200 230)"/>
+  </g>
+
+  <circle cx="200" cy="230" r="52" fill="url(#discG)"/>
+  <g fill="#fff3c4">
+    <circle cx="200" cy="210" r="4"/>
+    <circle cx="214" cy="228" r="4"/>
+    <circle cx="186" cy="228" r="4"/>
+    <circle cx="200" cy="246" r="4"/>
+    <circle cx="214" cy="264" r="4"/>
+    <circle cx="186" cy="264" r="4"/>
+    <circle cx="172" cy="246" r="4"/>
+    <circle cx="228" cy="246" r="4"/>
+    <circle cx="214" cy="210" r="4"/>
+    <circle cx="186" cy="210" r="4"/>
+  </g>
+</svg>

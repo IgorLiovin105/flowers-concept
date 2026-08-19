@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 533">
+  <defs>
+    <radialGradient id="bg" cx="0.5" cy="0.35" r="0.85">
+      <stop offset="0" stop-color="#fdeeee"/>
+      <stop offset="1" stop-color="#fff8f8"/>
+    </radialGradient>
+    <radialGradient id="petal" cx="0.5" cy="0.8" r="0.8">
+      <stop offset="0" stop-color="#d81b60"/>
+      <stop offset="0.6" stop-color="#ec407a"/>
+      <stop offset="1" stop-color="#ff9cbd"/>
+    </radialGradient>
+    <radialGradient id="petalSoft" cx="0.5" cy="0.8" r="0.8">
+      <stop offset="0" stop-color="#ef9a9a"/>
+      <stop offset="1" stop-color="#ffccd5"/>
+    </radialGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.8" r="0.8">
+      <stop offset="0" stop-color="#ff8f00"/>
+      <stop offset="1" stop-color="#ffca28"/>
+    </radialGradient>
+    <radialGradient id="disc" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffd54f"/>
+      <stop offset="1" stop-color="#8d5a12"/>
+    </radialGradient>
+    <linearGradient id="wrap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f8bbd0"/>
+      <stop offset="1" stop-color="#f48fb1"/>
+    </linearGradient>
+    <g id="rose">
+      <g fill="url(#petal)">
+        <ellipse cx="0" cy="-20" rx="17" ry="34"/>
+        <ellipse cx="0" cy="-20" rx="17" ry="34" transform="rotate(60)"/>
+        <ellipse cx="0" cy="-20" rx="17" ry="34" transform="rotate(120)"/>
+        <ellipse cx="0" cy="-20" rx="17" ry="34" transform="rotate(180)"/>
+        <ellipse cx="0" cy="-20" rx="17" ry="34" transform="rotate(240)"/>
+        <ellipse cx="0" cy="-20" rx="17" ry="34" transform="rotate(300)"/>
+      </g>
+      <circle r="12" fill="#c2185b"/>
+    </g>
+    <g id="daisy">
+      <g fill="#fff">
+        <ellipse cx="0" cy="-15" rx="7" ry="20"/>
+        <ellipse cx="0" cy="-15" rx="7" ry="20" transform="rotate(45)"/>
+        <ellipse cx="0" cy="-15" rx="7" ry="20" transform="rotate(90)"/>
+        <ellipse cx="0" cy="-15" rx="7" ry="20" transform="rotate(135)"/>
+        <ellipse cx="0" cy="-15" rx="7" ry="20" transform="rotate(180)"/>
+        <ellipse cx="0" cy="-15" rx="7" ry="20" transform="rotate(225)"/>
+        <ellipse cx="0" cy="-15" rx="7" ry="20" transform="rotate(270)"/>
+        <ellipse cx="0" cy="-15" rx="7" ry="20" transform="rotate(315)"/>
+      </g>
+      <circle r="9" fill="#ffca28"/>
+    </g>
+  </defs>
+
+  <rect width="400" height="533" fill="url(#bg)"/>
+
+  <path d="M200 340 L 95 505 C 60 508 30 503 12 495 L 200 340 Z" fill="url(#wrap)"/>
+  <path d="M200 340 L 305 505 C 340 508 370 503 388 495 L 200 340 Z" fill="url(#wrap)"/>
+
+  <g stroke="#3e7a3e" stroke-width="5" stroke-linecap="round" fill="none">
+    <path d="M200 175 C 200 230 200 280 200 340"/>
+    <path d="M170 205 C 170 255 180 300 200 340"/>
+    <path d="M230 205 C 230 255 220 300 200 340"/>
+    <path d="M150 235 C 158 275 176 310 200 340"/>
+    <path d="M250 235 C 242 275 224 310 200 340"/>
+  </g>
+  <g fill="#4caf50">
+    <ellipse cx="238" cy="280" rx="34" ry="14" transform="rotate(-30 238 280)"/>
+    <ellipse cx="162" cy="290" rx="32" ry="13" transform="rotate(25 162 290)"/>
+  </g>
+
+  <use href="#sun" transform="translate(128 175) scale(0.62)"/>
+  <use href="#rose" transform="translate(180 150) scale(0.85)"/>
+  <use href="#daisy" transform="translate(248 165) scale(0.7)"/>
+  <use href="#rose" transform="translate(205 200) scale(0.6)"/>
+  <use href="#daisy" transform="translate(150 205) scale(0.55)"/>
+  <use href="#sun" transform="translate(255 215) scale(0.5)"/>
+  <use href="#rose" transform="translate(195 240) scale(0.55)"/>
+
+  <ellipse cx="200" cy="360" rx="70" ry="34" fill="#ef9a9a" opacity="0.6"/>
+</svg>
